@@ -1,1 +1,5 @@
 **/*.pdf
+**/notes.txt
+**/__pycache__/
+**/data/
+**/checkpoints/
