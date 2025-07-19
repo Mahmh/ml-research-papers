@@ -1,4 +1,6 @@
 # BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding
+<img src="./thumbnail.svg" alt="BERT vs. BiLSTM vs. Logistic Regression on Sentiment Analysis">
+
 In this project, I fine-tuned and evaluated several models on the Stanford IMDb movie review sentiment analysis dataset (50,000 labeled examples). The goal is to compare performance across different architectures on a deep language-understanding task (i.e., sentiment analysis):
 
 - **BERT** (Devlin et al., 2018)
@@ -71,6 +73,3 @@ Follow these steps to set up and run this project:
 
     infer(model, text=input("Type a movie review: "), config=BERTConfig())
     ```
-
-## Preview
-<img src="./thumbnail.svg" alt="BERT vs. BiLSTM vs. Logistic Regression on Sentiment Analysis">

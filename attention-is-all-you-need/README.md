@@ -1,4 +1,6 @@
 # Attention Is All You Need
+<img src="./thumbnail.svg" alt="Transformer architecture – Vaswani et al., 2017">
+
 In this project, I re-implemented the full Transformer architecture from Vaswani et al. (2017) in PyTorch, covering both the encoder and decoder stacks. Using only one NVIDIA RTX 4080 GPU, I trained one model on an English-to-German translation task via the Multi30k dataset, and another model on an English-to-Czech translation task using the WMT19 dataset—which contains millions of sentence pairs—but subsampled 100,000 examples for demonstration.
 
 The Transformer replaces recurrent layers with **multi-head self-attention**, enabling significantly faster training and improved long-range dependency modeling. This repo provides the complete end-to-end training pipeline.
@@ -59,10 +61,3 @@ Follow these steps to set up and run this project:
     model = load_model("checkpoints/20250704_165351")
     translate(model, 'An English sentence')
     ```
-
-
-## Preview
-
-<img src="./thumbnail.png" alt="Transformer architecture – Vaswani et al., 2017">
-
-*Figure from “Attention Is All You Need,” Vaswani et al., 2017 © Google (used with permission).*
