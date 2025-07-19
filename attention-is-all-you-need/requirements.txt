@@ -2,10 +2,13 @@ torch==2.2.0
 torchtext==0.17.0
 numpy<2
 portalocker>=2.0.0
+matplotlib
 datasets
 transformers
 sacremoses
 sacrebleu
 bert_score
 evaluate
+tqdm
 jupyterlab
+ipykernel

@@ -19,13 +19,14 @@ paper-slug/
 | Date Published     | Paper |
 |----------|--------------------------------------------------|
 | 2017-06  | [Attention Is All You Need](./attention-is-all-you-need) |
-<!-- | 2018-10  | [BERT: Pre-training of Deep Bidirectional Transformers](./bert) |
-| 2022-05  | [Chain-of-Thought Prompting Elicits Reasoning in LLMs](./chain-of-thought) |
+| 2018-10  | [BERT: Pre-training of Deep Bidirectional Transformers](./bert) |
+<!--| 2022-05  | [Chain-of-Thought Prompting Elicits Reasoning in LLMs](./chain-of-thought) |
 | 2022-11  | [QLoRA: Efficient Finetuning of Quantized LLMs](./qlora) |
 | 2023-01  | [Hidden Technical Debt in Machine Learning Systems](./hidden-technical-debt) | -->
 
 
 ## Quick Start
+Replace `paper-slug` with the only folder you want to fetch:
 ### Copy Whole Repo
 ```bash
 # 1. Clone the repo (shallow — saves bandwidth)
@@ -34,9 +35,10 @@ cd ml-research-papers
 
 # 2. Create & activate an environment
 python -m venv .venv
-source .venv/bin/activate   # Windows: .venv\Scripts\activate
+source .venv/bin/activate   # PowerShell: .venv\Scripts\Activate.ps1
 
 # 3. Install the paper-specific dependencies
+pip install -e .
 cd paper-slug
 pip install -r requirements.txt
 
@@ -45,7 +47,20 @@ jupyter lab
 ```
 ### Copy Only One Folder
 ```bash
+# 1. Get the folder
 git clone --filter=blob:none --sparse https://github.com/Mahmh/ml-research-papers.git
 cd ml-research-papers
-git sparse-checkout set paper-slug   # replace `paper-slug` with the only folder you want to fetch
+git sparse-checkout set paper-slug setup.py
+
+# 2. Create & activate an environment
+python -m venv .venv
+source .venv/bin/activate   # PowerShell: .venv\Scripts\Activate.ps1
+
+# 3. Install the paper-specific dependencies
+pip install -e .
+cd paper-slug
+pip install -r requirements.txt
+
+# 4. Launch your favorite notebook runner or editor
+jupyter lab
 ```

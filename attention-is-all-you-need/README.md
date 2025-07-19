@@ -16,7 +16,6 @@ Follow these steps to set up and run this project:
 
     ```bash
     git clone https://github.com/Mahmh/ml-research-papers
-    cd attention-is-all-you-need
     ```
 
 2. **Create and activate a virtual environment**
@@ -25,11 +24,15 @@ Follow these steps to set up and run this project:
       ```bash
       python3 -m venv venv
       source venv/bin/activate
+      pip install -e .
+      cd attention-is-all-you-need
       ```
     - **Windows (PowerShell)**  
       ```powershell
       python -m venv venv
       .\venv\Scripts\Activate.ps1
+      pip install -e .
+      cd attention-is-all-you-need
       ```
 
 3. **Install dependencies**
@@ -38,15 +41,10 @@ Follow these steps to set up and run this project:
     pip install -r requirements.txt
     ```
 
-4. **Run the project**
-    - **Launch JupyterLab**  
-      ```bash
-      jupyter lab
-      ```
-    - **Or train from the command line**  
-      ```bash
-      python train.py
-      ```
+4. **Run the project (JupyterLab)**
+    ```bash
+    jupyter lab
+    ```
 
 5. **Inspect outputs**
     After training, artifacts are saved under `checkpoints/<timestamp>/`, including:
@@ -54,7 +52,7 @@ Follow these steps to set up and run this project:
     - `loss_curve.png` (training & validation loss curves)  
     - `metadata.json` (hyperparameters & final train/val/test results)
 
-6. **Load a checkpoint for inference**
+6. **Load a checkpoint for inference (example)**
 
     ```python
     from lib.wmt19_model_utils import load_model
