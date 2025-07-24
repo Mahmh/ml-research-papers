@@ -20,9 +20,6 @@ paper-slug/
 |----------|--------------------------------------------------|
 | 2017-06  | [Attention Is All You Need](./attention-is-all-you-need) |
 | 2018-10  | [BERT: Pre-training of Deep Bidirectional Transformers](./bert) |
-<!--| 2022-05  | [Chain-of-Thought Prompting Elicits Reasoning in LLMs](./chain-of-thought) |
-| 2022-11  | [QLoRA: Efficient Finetuning of Quantized LLMs](./qlora) |
-| 2023-01  | [Hidden Technical Debt in Machine Learning Systems](./hidden-technical-debt) | -->
 
 
 ## Quick Start
