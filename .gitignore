@@ -4,5 +4,7 @@
 **/.ipynb_checkpoints/
 **/data/
 **/checkpoints/
+**/archived/
 *.egg-info/
 .vscode/
+instructions.md

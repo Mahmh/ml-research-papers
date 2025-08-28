@@ -1,0 +1,15 @@
+# Python 3.11.4
+datasets
+transformers
+evaluate
+peft
+tqdm
+torch
+matplotlib
+sacrebleu
+nltk
+rouge_score
+protobuf
+sentencepiece
+jupyterlab
+ipykernel
