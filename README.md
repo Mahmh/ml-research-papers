@@ -16,11 +16,15 @@ paper-slug/
 > **Goal:** enhance my skills & experience in the research side of AI and make cutting-edge ML papers less opaque.
 
 ## Papers in This Repo
-| Date Published     | Paper |
-|----------|--------------------------------------------------|
-| 2017-06  | [Attention Is All You Need](./attention-is-all-you-need) |
-| 2018-10  | [BERT: Pre-training of Deep Bidirectional Transformers](./bert) |
+Total: 5
 
+| Date Published     | Paper |
+|---------|--------------------------------------------------|
+| 2017-06 | [Attention Is All You Need](./attention-is-all-you-need) |
+| 2018-10 | [BERT: Pre-training of Deep Bidirectional Transformers](./bert) |
+| 2022-01 | [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](./cot-reasoning) |
+| 2022-03 | [Self-Consistency Improves Chain of Thought Reasoning in Language Models](./self-consistency-cot-reasoning) |
+| 2021-06 | [LoRA: Low-Rank Adaptation of Large Language Models](./lora) |
 
 ## Quick Start
 Replace `paper-slug` with the only folder you want to fetch:
