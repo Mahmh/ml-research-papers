@@ -50,7 +50,7 @@ def get_metadata(
     epoch_time: float,
     total_time: float,
     device: Union[torch.device, str],
-    peak_vram_mb: Optional[float],
+    peak_vram_mib: Optional[float],
     ckpt_dir: Path,
 ) -> Dict[str, Any]:
     """Create a training metadata dict (JSON-serializable). All parameters are positional."""
@@ -97,7 +97,9 @@ def get_metadata(
         },
         "resources": {
             "device": str(device),
-            "peak_vram_mb": (float(peak_vram_mb) if peak_vram_mb is not None else None),
+            "peak_vram_mib": (
+                float(peak_vram_mib) if peak_vram_mib is not None else None
+            ),
         },
         "artifacts": {
             "loss_curve_png": (ckpt_dir / "loss_curve.png").as_posix(),
